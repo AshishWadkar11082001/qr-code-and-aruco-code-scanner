@@ -1,0 +1,22 @@
+def detect_Qr_details(image):
+
+    Purpose: This function takes the image as an argument and returns a dictionary such that the message encrypted in the Qr code is the key and the center co-ordinates of the Qr code is the value, for each item in the dictionary
+
+    Input Arguments: `image` :	[ numpy array ]
+            numpy array of image returned by cv2 library
+    Returns: `Qr_codes_details` : { dictionary }
+              dictionary containing the details regarding the Qr code
+
+
+def detect_ArUco_details(image):
+
+    Purpose: This function takes the image as an argument and returns a dictionary such that the id of the ArUco marker is the key and a list of details of the marker is the value for each item in the dictionary. The list of details include the following parameters as the items in the given order
+        	 [center co-ordinates, angle from the vertical, list of corner co-ordinates] 
+    		 This order should be strictly maintained in the output
+
+    Input Arguments: `image` :	[ numpy array ]
+           		    numpy array of image returned by cv2 library
+    Returns: `ArUco_details_dict` : { dictionary }
+            dictionary containing the details regarding the ArUco marker
+
+
